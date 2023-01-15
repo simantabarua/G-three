@@ -67,6 +67,10 @@ nav ul li {
   text-align: center;
   margin-block: 1rem;
   color: #ffffff;
+  cursor: pointer;
+}
+.btn__primary:hover {
+  background-image: linear-gradient(to right top, #9c581b, #ebbc12);
 }
 .section-title {
   font-weight: 700;
@@ -137,6 +141,7 @@ nav ul li {
   justify-content: space-around;
   gap: 1rem;
   align-items: center;
+  position: relative;
 }
 
 .feature-left {
@@ -150,6 +155,34 @@ nav ul li {
   height: auto;
   min-width: 300px;
 }
+.card {
+  padding-block: 1.5rem;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  color: #131313;
+}
+.card-description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #727272;
+  max-width: 560px;
+  min-width: 100%;
+}
+.experience-btn {
+  position: absolute;
+  padding: 30px 35px;
+  background: var(--secondary-color);
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  bottom: 0;
+  left: 500px;
+}
+
 /* Fact section style */
 .facts-cards {
   display: grid;
@@ -276,5 +309,8 @@ footer {
   }
   .contact-us {
     flex-direction: column;
+  }
+  .experience-btn {
+    left: 0;
   }
 }
