@@ -56,6 +56,11 @@ nav ul li {
   color: var(--dark-gray);
   cursor: pointer;
 }
+nav ul li:hover {
+  font-weight: 600;
+  color: var(--tertiary-color);
+}
+
 /* Button style */
 .btn__primary {
   background: var(--secondary-color);
@@ -86,7 +91,7 @@ nav ul li {
 }
 .section-heading {
   text-align: center;
-  margin-block: 1rem;
+  margin-block: 0.5rem;
 }
 /* banner */
 .banner-text {
@@ -97,7 +102,13 @@ nav ul li {
   justify-content: center;
   text-align: center;
 }
-
+.banner-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 75px;
+  text-align: center;
+  color: #131313;
+}
 .banner img {
   min-width: 300px;
   padding: 1rem;
@@ -108,16 +119,7 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
-}
-.quicklist_text {
-  width: 450px;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  gap: 3rem;
 }
 .quicklist_image {
   display: grid;
@@ -134,6 +136,28 @@ nav ul li {
 .quicklist_image img:hover {
   transform: scale(90%);
 }
+
+.quick-list-text {
+  width: 450px;
+}
+.quick-list-title {
+  font-size: 2rem;
+  color: var(--tertiary-color);
+}
+
+.quick-list-title b {
+  color: var(--primary-color);
+}
+.quick-list-title b span {
+  color: var(--secondary-color);
+}
+
+.quick-list-info {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
 /* feature section style */
 .feature {
   max-width: 100%;
@@ -182,7 +206,19 @@ nav ul li {
   bottom: 0;
   left: 500px;
 }
-
+.feature-heading {
+  position: relative;
+}
+.feature-heading h3 {
+  padding-left: 1rem;
+}
+.feature-heading-left {
+  height: 100px;
+  width: 10px;
+  position: absolute;
+  left: 0;
+  background: var(--secondary-color);
+}
 /* Fact section style */
 .facts-cards {
   display: grid;
@@ -287,6 +323,10 @@ footer {
 
   .quicklist_image {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .quick-list-text{
+    width: 100%;
+    text-align: center;
   }
 }
 
