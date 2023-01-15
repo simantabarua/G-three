@@ -214,7 +214,7 @@ nav ul li:hover {
 }
 .feature-heading-left {
   height: 100px;
-  width: 10px;
+  width: 5px;
   position: absolute;
   left: 0;
   background: var(--secondary-color);
