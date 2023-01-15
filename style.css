@@ -203,8 +203,8 @@ nav ul li:hover {
   text-align: center;
   color: #ffffff;
   border-radius: 10px;
-  bottom: 0;
-  left: 500px;
+  bottom: 1rem;
+  left: 450px;
 }
 .feature-heading {
   position: relative;
@@ -236,9 +236,20 @@ nav ul li:hover {
   border: 1px solid #ff900e;
   border-radius: 8px;
   text-align: center;
+  cursor: pointer;
+  transition: .5s ease-in;
 }
 .fact-card img {
   width: 1.5rem;
+  object-fit: cover;
+}
+.fact-card:hover {
+  border: 1px solid #ebbc12;
+  transform: scale(110%);
+  overflow: hidden;
+}
+.fact-card img:hover {
+  transform: scale(102%);
 }
 /* Contact us section style */
 /* #### Extra section ##### */
@@ -291,6 +302,7 @@ form button {
 }
 .sponspors img {
   width: 100%;
+  filter: grayscale(100%);
 }
 
 footer {
@@ -300,7 +312,7 @@ footer {
   justify-content: center;
   text-align: center;
 }
-
+/* Mobile  */
 @media only screen and (max-width: 576px) {
   body {
     background-color: lightblue;
@@ -324,7 +336,7 @@ footer {
   .quicklist_image {
     grid-template-columns: repeat(1, 1fr);
   }
-  .quick-list-text{
+  .quick-list-text {
     width: 100%;
     text-align: center;
   }
